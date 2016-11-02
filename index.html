@@ -3,6 +3,30 @@
   <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('.question1').click(function() {
+        var choice = $(this).data('value');
+        $('#question1-choice').val(choice);
+      });
+      $('.question2').click(function() {
+        var choice = $(this).data('value');
+        $('#question2-choice').val(choice);
+      });
+      $('.question3').click(function() {
+        var choice = $(this).data('value');
+        $('#question3-choice').val(choice);
+      });
+      $('.question4').click(function() {
+        var choice = $(this).data('value');
+        $('#question4-choice').val(choice);
+      });
+      $('.question5').click(function() {
+        var choice = $(this).data('value');
+        $('#question5-choice').val(choice);
+      });
+    });
+    </script>
     <script src="myweb.js"></script>
     <title>Buzzfeed Cookie Quiz</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -14,31 +38,60 @@
 
 <section class="container">
   <h2>What does your Friday night look like?</h2>
-  <br>
-  <p>
-  <img src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
-  <img src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
-  <img src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
-  <img src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
-</p>
+  <div>
+</div>
+</section>
+<section class="image_container">
+    <img class="question1" data-value="0" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question1" data-value="1" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question1" data-value="2" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question1" data-value="3" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
 </section>
 
 <section class="question">
   <h2>What is your ideal pet?</h2>
+</section>
 
+<section class="image_container">
+    <img class="question2" data-value="0" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question2" data-value="1" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question2" data-value="2" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question2" data-value="3" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
 </section>
 
 <section class="question">
   <h2>What's your next vacation?</h2>
 </section>
 
+<section class="image_container">
+    <img class="question3" data-value="0" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question3" data-value="1" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question3" data-value="2" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question3" data-value="3" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+</section>
+
 <section class="question">
   <h2>What is your favorite hobby?</h2>
+</section>
+
+<section class="image_container">
+  <img class="question4" data-value="0" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question4" data-value="1" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question4" data-value="2" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question4" data-value="3" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
 </section>
 
 <section class="question">
   <h2>What is your ideal future home?</h2>
 </section>
+
+<section class="image_container">
+  <img class="question5" data-value="0" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question5" data-value="1" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question5" data-value="2" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question5" data-value="3" src="Chocolate_chip_cookie.jpg" alt="HTML5 Icon" style="width:128px;height:128px" ></section>
+
+<button id="calculate">What cookie are you?</button>
 
   </body>
 </html>

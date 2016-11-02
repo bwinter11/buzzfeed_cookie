@@ -44,3 +44,18 @@ li {
   justify-content: center;
   align-items: center;
 }
+
+.image_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_container img {
+  margin: 10px;
+}
+
+button {
+  text-align: center;
+}
